@@ -1,0 +1,101 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvSelectTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/title" />
+
+    <Spinner
+        android:id="@+id/spThemes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSelectTheme"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/tvSelectTheme"
+        android:layout_toRightOf="@+id/tvSelectTheme"
+        android:entries="@array/theme_array"
+        android:spinnerMode="dropdown" />
+
+    <RelativeLayout
+        android:id="@+id/rlCredentials"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSelectTheme">
+
+        <TextView
+            android:id="@+id/tvCredentials"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/credentials" />
+
+        <EditText
+            android:id="@+id/tvUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCredentials"
+            android:hint="@string/username_hint"
+            android:inputType="text"
+            android:lines="1" />
+
+        <EditText
+            android:id="@+id/tvpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUsername"
+            android:hint="@string/password_hint"
+            android:inputType="textPassword"
+            android:lines="1" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSync"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlCredentials"
+        android:text="@string/sync_automatically"
+        android:textSize="17sp" />
+
+    <CheckBox
+        android:id="@+id/checkbox_sync_automatically"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvSync"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:checked="true" />
+
+    <TextView
+        android:id="@+id/tvLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvSync"
+        android:text="@string/location"
+        android:textSize="17sp" />
+
+    <Switch
+        android:id="@+id/toggle_google"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tvLocation"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_toEndOf="@+id/tvLocation"
+        android:layout_toRightOf="@+id/tvLocation"
+        android:textOff="@string/state_off"
+        android:textOn="@string/state_on" />
+
+    <Button
+        android:id="@+id/btnClearData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="224dp"
+        android:text="@string/button" />
+
+
+</RelativeLayout>
