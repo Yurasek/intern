@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button">жмяк</string>
+    <string name="switch_btn">перемикач</string>
+    <string name="radio_btn">радіо-кнопка</string>
+    <string name="title">"Моя користувальницька тема "</string>
+    <string name="checkbox">прапорець</string>
+</resources>

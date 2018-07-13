@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="button">жмяк</string>
+    <string name="switch_btn">переключатель</string>
+    <string name="radio_btn">радиокнопка</string>
+    <string name="checkbox">чекбокс</string>
+    <string name="title">Мой собственный дезигн</string>
+</resources>

@@ -1,22 +1,12 @@
 <resources>
-    <string name="app_name">Styles</string>
+    <string name="app_name" translatable="false">Styles</string>
 
     <string name="title">My custom theme</string>
-    <string name="credentials">Credentials</string>
-    <string name="username_hint">username</string>
-    <string name="password_hint">password</string>
-    <string name="sync_automatically">Sync automatically</string>
-    <string name="location">Location</string>
-    <string name="state_on">On</string>
-    <string name="state_off">Off</string>
+    <string name="switch_btn">switch button</string>
+    <string name="checkbox">checkbox</string>
+    <string name="radio_btn">radio button</string>
     <string name="button">zhmyak</string>
 
-    <string-array name="theme_array">
-        <item>item1</item>
-        <item>item2</item>
-        <item>item3</item>
-        <item>item4</item>
-    </string-array>
 
 
 </resources>
