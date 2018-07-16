@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Converter</string>
+    <string-array name="densitys_type">
+        <item>Low Density Per Inch (LDPI, 120dpi)</item>
+        <item>Medium Density Per Inch (MDPI, 160dpi)</item>
+        <item>High Density Per Inch (HDPI, 240dpi)</item>
+        <item>Extra High Density Per Inch (XHDPI, 320dpi)</item>
+        <item>Extra Extra High Density Per Inch (XXHDPI, 480dpi)</item>
+        <item>Extra Extra Extra High Density Per Inch (XXXHDPI, 640dpi)</item>
+    </string-array>
+</resources>

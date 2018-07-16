@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dpconverter.MainActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        tools:layout_editor_absoluteY="54dp" tools:layout_editor_absoluteX="108dp" android:id="@+id/editText2"
+        android:layout_marginBottom="70dp" android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/spinner" android:layout_alignEnd="@+id/spinner"/>
+    <Spinner
+        android:layout_width="368dp"
+        android:layout_height="wrap_content" android:id="@+id/spinner" tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp"
+        android:layout_alignParentTop="true" android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_below="@+id/spinner"
+        android:layout_centerHorizontal="true" android:layout_marginTop="29dp"/>
+</RelativeLayout>
