@@ -1,1 +1,1 @@
-include ':app', ':dpconverter'
+include ':dpconverter', ':customkeyboard', 'styles'

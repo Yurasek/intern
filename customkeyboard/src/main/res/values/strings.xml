@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">CustomKeyboard</string>
+
+
+    <!-- Counter launcher -->
+    <string name="drawn">Drawn</string>
+    <string name="measured">Measured</string>
+    <string name="invalidated">Invalidated</string>
+    <string name="attributed">Attributed</string>
+    <string name="interacted">Interacted</string>
+    <string name="grouped">ViewGrouped</string>
+
+    <!-- Tally counter interface -->
+    <string name="click">Click</string>
+    <string name="reset">Reset</string>
+
+    <!-- List item example strings -->
+    <string name="list_item_01">Melancholic</string>
+    <string name="list_item_02">Phlegmatic</string>
+    <string name="list_item_03">Sanguine</string>
+    <string name="list_item_04">Choleric</string>
+
+    <string name="list_item_01_desc">Earth. Black. Leonardo. Fred. Jerry. Paul. Reed.</string>
+    <string name="list_item_02_desc">Water. Green. Donatello. Velma. George. George. Sue.</string>
+    <string name="list_item_03_desc">Air. Red. Raphael. Daphne. Elaine. John. Ben.</string>
+    <string name="list_item_04_desc">Fire. Yellow. Michelangelo. Shaggy. Kramer. Ringo. Johnny.</string>
+
+    <string name="zero">0</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+
+
+    <string name="digit_button"></string>
+
+</resources>
