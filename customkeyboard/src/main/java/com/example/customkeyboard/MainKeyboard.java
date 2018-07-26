@@ -17,6 +17,7 @@ import android.widget.TextView;
 
 import org.w3c.dom.Text;
 
+import java.util.List;
 import java.util.Locale;
 
 public class CustomView extends View{
@@ -37,13 +38,17 @@ public class CustomView extends View{
 
     private float textWidth;
 
+    private KeyboardListener listener;
+
+    private List<CustomView> mainList;
+
     private float textX;
 
-    private TextView textView;
-
     public CustomView(Context context) {
+
         super(context);
     }
+
     public CustomView(Context context, @Nullable AttributeSet attrs) {
 
         super(context, attrs);
@@ -53,9 +58,18 @@ public class CustomView extends View{
         } finally {
             typedArray.recycle();
         }
+        setupListeners();
         numberPaint = new TextPaint(Paint.ANTI_ALIAS_FLAG);
         numberPaint.setColor(ContextCompat.getColor(context, android.R.color.black));
         numberPaint.setTextSize(Math.round(32f * getResources().getDisplayMetrics().scaledDensity));
+    }
+
+    public void setMainList(List<CustomView> mainList) {
+        this.mainList = mainList;
+    }
+
+    public void setListener(KeyboardListener listener){
+        this.listener = listener;
     }
 
 
@@ -78,8 +92,6 @@ public class CustomView extends View{
     @Override
     protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec) {
 
-        //super.onMeasure(widthMeasureSpec, heightMeasureSpec);
-
         final Paint.FontMetrics fontMetrics = numberPaint.getFontMetrics();
 
         final int maxTextWidth = Math.round(numberPaint.measureText(MAX_TEXT_LENGTH)*3);
@@ -88,12 +100,19 @@ public class CustomView extends View{
         final int measuredWidth = resolveSizeAndState(maxTextWidth, widthMeasureSpec, 0);
         final int measuredHeight = resolveSizeAndState(maxTextHeight, heightMeasureSpec, 0);
 
-        //final int lolWidth = getMeasuredWidth();
-        //final int lolHeight = getMeasuredHeight();
-
-        //Log.d("lol", Integer.toString(lolWidth) + ", " + Integer.toString(lolHeight));
-
         setMeasuredDimension(measuredWidth, measuredHeight);
+    }
+
+    private void setupListeners(){
+
+        this.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                if(listener != null){
+                   listener.onClickedNumberView(Integer.parseInt(displayedText));
+                }
+            }
+        });
     }
 
 }

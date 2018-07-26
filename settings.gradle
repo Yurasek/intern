@@ -1,1 +1,1 @@
-include ':dpconverter', ':customkeyboard', 'styles'
+include ':dpconverter', ':customkeyboard', ':newsfeed', 'styles'
